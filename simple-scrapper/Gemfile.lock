@@ -1,0 +1,27 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    csv (3.2.6)
+    date (3.3.3)
+    nokogiri (1.14.3-x86_64-linux)
+      racc (~> 1.4)
+    open-uri (0.3.0)
+      stringio
+      time
+      uri
+    racc (1.6.2)
+    stringio (3.0.6)
+    time (0.2.2)
+      date
+    uri (0.12.1)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  csv
+  nokogiri
+  open-uri
+
+BUNDLED WITH
+   2.3.4

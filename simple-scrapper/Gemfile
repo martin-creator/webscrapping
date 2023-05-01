@@ -1,0 +1,5 @@
+source 'https://rubygems.org/'
+
+gem 'nokogiri' # HTML parser
+gem 'open-uri' # URL opener or makes request to URL
+gem 'csv' # CSV parser or makes CSV files
