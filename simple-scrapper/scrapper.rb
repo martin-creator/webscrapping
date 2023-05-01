@@ -1,6 +1,7 @@
 require 'open-uri'
 require 'nokogiri'
 require 'csv'
+require 'json'
 
 def scrapping
     html = URI.open('https://github.com/search?q=Ruby+Web+Scraping') # Open the url
@@ -22,6 +23,7 @@ def scrapping
         
     # end
     export_csv(items_array)
+    export_json(items_array)
 end
 
 def export_csv(items_array)
@@ -31,6 +33,13 @@ def export_csv(items_array)
         items_array.each_with_index do |item, index|
             csv << [ index + 1, item[0], item[1]] # << is the same as .push method and >> is the same as .unshift method in arrays
         end
+    end
+end
+
+def export_json(items_array)
+    file_path = "data.json"
+    File.open(file_path, 'w') do |file|
+        file.write(JSON.pretty_generate(items_array))
     end
 end
 
