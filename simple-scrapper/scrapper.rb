@@ -14,24 +14,26 @@ def scrapping
         items_array << [name, description]
     end
 
-    items_array.each_with_index do |item, index|
-        # puts "-----------------------------------"
-        # puts "Item #{index + 1} - #{item[0]}"
-        # puts "Description: #{item[1]}"
+    # items_array.each_with_index do |item, index|
+    #     # puts "-----------------------------------"
+    #     # puts "Item #{index + 1} - #{item[0]}"
+    #     # puts "Description: #{item[1]}"
 
-        export_csv(items_array)
-    end
-
+        
+    # end
+    export_csv(items_array)
 end
 
 def export_csv(items_array)
     file_path = "data.csv"
-    CSV.open(file_path, 'w') do |csv|
+    CSV.open(file_path, 'w') do |csv| # each_with_index does the same as each but it also gives you the index of the item
         csv << ['#', 'Name', 'Description'] # Add headers to the csv file
-        items_array.each do |item, index|
-            csv << [ index.to_i + 1, item[0], item[1]]
+        items_array.each_with_index do |item, index|
+            csv << [ index + 1, item[0], item[1]] # << is the same as .push method and >> is the same as .unshift method in arrays
         end
     end
 end
+
+
 
 scrapping

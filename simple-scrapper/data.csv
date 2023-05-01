@@ -1,11 +1,11 @@
 #,Name,Description
-1,s,p
-1,j,a
-1,G,e
-1,v,i
-1,R,e
-1,g,o
-1,d,a
-1,g,a
-1,a,l
-1,g,i
+1,sparklemotion/mechanize,Mechanize is a ruby library that makes automated web interaction easy.
+2,jaimeiniesta/metainspector,"Ruby gem for web scraping purposes. It scrapes a given URL, and returns you its title, meta description, meta keyword…"
+3,Germey/AwesomeWebScraping,"List of libraries, tools and APIs for web scraping and data processing."
+4,vifreefly/kimuraframework,"Kimurai is a modern web scraping framework written in Ruby which works out of box with Headless Chromium/Firefox, Pha…"
+5,RealEstateWebTools/property_web_scraper,Web based UI to make scraping data from real estate websites super simple
+6,gogotanaka/maxwell,🗡 Maxwell makes web scraping more simpler and faster with Ruby.
+7,davidesantangelo/webinspector,"Ruby gem to inspect completely a web page. It scrapes a given URL, and returns you its meta, links, images more."
+8,gabceb/node-metainspector,"Node npm for web scraping purposes. It scrapes a given URL, and returns you its title, meta description, meta keyword…"
+9,alexisadorn/Flatiron-OO-Ruby,Flatiron Full Stack Web Development Curriculum & Labs - Object-Oriented Ruby
+10,gitter-badger/kimurai,"Kimurai is a modern web scraping framework written in Ruby which works out of box with headless chromium/firefox, pha…"
